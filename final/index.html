@@ -11,16 +11,16 @@
     <meta property="og:title" content="AM | Invoice-Based International Payments" />
     <meta property="og:description" content="Clear route, visible fees, bank-account payouts, confirmation documents. 180+ countries." />
     <meta property="og:type" content="website" />
-    <title>AM | Invoice-Based International Payments</title>
+    <title data-i18n="meta.title">AM | Invoice-Based International Payments</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Noto+Sans+Arabic:wght@400;500;600;700;800&family=Noto+Sans+Devanagari:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
   </head>
-  <body>
+  <body data-default-language="en">
     <header class="site-header" data-header>
       <nav class="nav-shell" aria-label="Main navigation">
         <a class="brand" href="#top" aria-label="AM home">
@@ -28,12 +28,23 @@
           <span class="brand-name">AM</span>
         </a>
         <div class="nav-links">
-          <a href="#process">How it works</a>
-          <a href="#cases">Use cases</a>
-          <a href="#comparison">Comparison</a>
-          <a href="#questions">Questions</a>
+          <a href="#process" data-i18n="nav.howItWorks">How it works</a>
+          <a href="#cases" data-i18n="nav.cases">Use cases</a>
+          <a href="#comparison" data-i18n="nav.comparison">Comparison</a>
+          <a href="#questions" data-i18n="nav.questions">Questions</a>
         </div>
-        <a class="nav-cta" href="#start">Start for Free</a>
+        <label class="language-picker" aria-label="Choose language">
+          <span class="language-picker-icon" aria-hidden="true">🌐</span>
+          <select data-language-switcher aria-label="Language selector">
+            <option value="en">English</option>
+            <option value="ar">العربية</option>
+            <option value="hi">हिन्दी</option>
+            <option value="ha">Hausa</option>
+            <option value="tr">Türkçe</option>
+            <option value="id">Bahasa Indonesia</option>
+          </select>
+        </label>
+        <a class="nav-cta" href="#start" data-i18n="cta.startFree">Start for Free</a>
       </nav>
     </header>
 
@@ -43,26 +54,26 @@
         <div class="hero-inner">
           <div class="hero-badge">
             <span class="dot" aria-hidden="true"></span>
-            Structured international payments
+            <span data-i18n="hero.badge">Structured international payments</span>
           </div>
           <h1 class="hero-title">
-            Invoice-based international payments<br />
-            <span class="hero-title-accent">with a clear route and less stress.</span>
+            <span data-i18n="hero.title1">Invoice-based international payments</span><br />
+            <span class="hero-title-accent" data-i18n="hero.title2">with a clear route and less stress.</span>
           </h1>
-          <p class="hero-lede">
+          <p class="hero-lede" data-i18n="hero.lede">
             Make payments with payout to the recipient's bank account, fully traceable
             transaction status, and supporting transaction documents.
           </p>
           <div class="hero-cta">
             <a class="button button-primary button-xl" href="#start">
-              Start for Free
+              <span data-i18n="cta.startFree">Start for Free</span>
               <span class="button-arrow" aria-hidden="true">→</span>
             </a>
-            <p class="hero-assist">
+            <p class="hero-assist" data-i18n="hero.assist">
               Start using the service now and receive guidance from your personal AI assistant.
             </p>
           </div>
-          <p class="hero-support">
+          <p class="hero-support" data-i18n="hero.support">
             AM helps you make international invoice payments, pay for overseas services, and
             settle other obligations. Before you confirm, you see the fee, and the payout is sent
             to the recipient's bank account.
@@ -74,37 +85,37 @@
             <div class="route-card-top">
               <span class="status-pill">
                 <span class="status-dot"></span>
-                Fee visible before confirmation
+                <span data-i18n="preview.statusPill">Fee visible before confirmation</span>
               </span>
             </div>
             <div class="route-map" aria-hidden="true">
               <div class="route-node done">
                 <span class="route-num">01</span>
-                <span class="route-label">Invoice details</span>
+                <span class="route-label" data-i18n="preview.route0">Invoice details</span>
               </div>
               <div class="route-bar"><span></span></div>
               <div class="route-node done">
                 <span class="route-num">02</span>
-                <span class="route-label">Documents</span>
+                <span class="route-label" data-i18n="preview.route1">Documents</span>
               </div>
               <div class="route-bar"><span></span></div>
               <div class="route-node active">
                 <span class="route-num">03</span>
-                <span class="route-label">Bank payout</span>
+                <span class="route-label" data-i18n="preview.route2">Bank payout</span>
               </div>
             </div>
             <div class="assistant-panel">
               <div class="assistant-orb" aria-hidden="true"></div>
               <div class="assistant-text">
-                <strong>AI guidance inside the interface</strong>
-                <span>Prompts for the next step, document checks, and payment-route clarity.</span>
+                <strong data-i18n="preview.assistantTitle">AI guidance inside the interface</strong>
+                <span data-i18n="preview.assistantText">Prompts for the next step, document checks, and payment-route clarity.</span>
               </div>
             </div>
             <div class="confirmation-row">
-              <span>Payment confirmation</span>
+              <span data-i18n="preview.paymentConfirmation">Payment confirmation</span>
               <strong class="confirmation-ready">
                 <span class="check-dot"></span>
-                Ready
+                <span data-i18n="preview.ready">Ready</span>
               </strong>
             </div>
           </div>
@@ -114,26 +125,38 @@
       <!-- METRICS STRIP -->
       <section class="metrics" aria-label="Core benefits">
         <div class="metrics-track">
-          <div class="metric-chip"><strong>180+</strong><span>countries</span></div>
-          <div class="metric-chip"><strong>Clear route</strong><span>for every payment</span></div>
-          <div class="metric-chip"><strong>In-app support</strong><span>inside the interface</span></div>
-          <div class="metric-chip"><strong>Confirmation</strong><span>documents kept</span></div>
+          <div class="metric-chip">
+            <strong data-i18n="metrics.0.strong">180+</strong>
+            <span data-i18n="metrics.0.span">countries</span>
+          </div>
+          <div class="metric-chip">
+            <strong data-i18n="metrics.1.strong">Clear route</strong>
+            <span data-i18n="metrics.1.span">for every payment</span>
+          </div>
+          <div class="metric-chip">
+            <strong data-i18n="metrics.2.strong">In-app support</strong>
+            <span data-i18n="metrics.2.span">inside the interface</span>
+          </div>
+          <div class="metric-chip">
+            <strong data-i18n="metrics.3.strong">Confirmation</strong>
+            <span data-i18n="metrics.3.span">documents kept</span>
+          </div>
         </div>
       </section>
 
       <!-- HOW IT WORKS -->
       <section id="process" class="section how">
         <div class="section-head reveal">
-          <p class="eyebrow">How the service works</p>
-          <h2>A calm route from invoice details to bank-account payout.</h2>
+          <p class="eyebrow" data-i18n="process.eyebrow">How the service works</p>
+          <h2 data-i18n="process.title">A calm route from invoice details to bank-account payout.</h2>
         </div>
 
         <ol class="step-list reveal">
           <li class="step">
             <div class="step-num">01</div>
             <div class="step-body">
-              <h3>Upload the payment details</h3>
-              <p>
+              <h3 data-i18n="process.s0.title">Upload the payment details</h3>
+              <p data-i18n="process.s0.body">
                 Enter the recipient, amount, currency, and payment purpose. If you have questions,
                 the AI assistant explains what information is needed and what comes next.
               </p>
@@ -142,8 +165,8 @@
           <li class="step">
             <div class="step-num">02</div>
             <div class="step-body">
-              <h3>Attach documents and review the summary</h3>
-              <p>
+              <h3 data-i18n="process.s1.title">Attach documents and review the summary</h3>
+              <p data-i18n="process.s1.body">
                 Add documents related to the transaction or required for verification. Before
                 confirming, you see the service fee and the main transfer details.
               </p>
@@ -152,8 +175,8 @@
           <li class="step">
             <div class="step-num">03</div>
             <div class="step-body">
-              <h3>Confirm the transfer</h3>
-              <p>
+              <h3 data-i18n="process.s2.title">Confirm the transfer</h3>
+              <p data-i18n="process.s2.body">
                 After confirmation, the payment moves forward through the selected route. You keep
                 the confirmation and documents confirming the payment execution.
               </p>
@@ -163,16 +186,16 @@
 
         <div class="security-note reveal">
           <span class="shield" aria-hidden="true">🛡</span>
-          <p>Security is our key to your transfers.</p>
+          <p data-i18n="process.security">Security is our key to your transfers.</p>
         </div>
       </section>
 
-      <!-- CASES — целостные карточки с оригинальными текстами -->
+      <!-- CASES -->
       <section id="cases" class="cases">
         <div class="section-head reveal">
-          <p class="eyebrow">Real payment tasks</p>
-          <h2>How your international payment works in everyday business and personal scenarios.</h2>
-          <p class="section-sub">
+          <p class="eyebrow" data-i18n="cases.eyebrow">Real payment tasks</p>
+          <h2 data-i18n="cases.title">How your international payment works in everyday business and personal scenarios.</h2>
+          <p class="section-sub" data-i18n="cases.sub">
             From verification and document upload to payout to the recipient's bank account and
             payment confirmation, each scenario shows the same clear route through AM.
           </p>
@@ -186,30 +209,30 @@
                   <source srcset="assets/cases/ahmed.webp" type="image/webp" />
                   <img src="assets/cases/ahmed.jpg" loading="lazy" alt="Ahmed, founder in the UAE, reviewing payment documents in a bright office" />
                 </picture>
-                <span class="case-flag">UAE · International investment</span>
+                <span class="case-flag" data-i18n="case.0.flag">UAE · International investment</span>
               </div>
               <div class="case-content">
-                <h3>Ahmed, Founder of an International Investment Company</h3>
-                <p class="case-objective">
+                <h3 data-i18n="case.0.name">Ahmed, Founder of an International Investment Company</h3>
+                <p class="case-objective" data-i18n="case.0.objective">
                   Makes payments to employees in other countries through structured international
                   payments.
                 </p>
-                <p class="case-body">
+                <p class="case-body" data-i18n="case.0.body">
                   Ahmed needs official payments without a long intermediary-bank chain, with a
                   clear route, confirmation, and direct payouts to bank accounts.
                 </p>
                 <details class="case-details">
-                  <summary>How the payment works</summary>
+                  <summary data-i18n="case.howSummary">How the payment works</summary>
                   <ul>
-                    <li>The AI assistant guides him directly inside the AM interface.</li>
-                    <li>The company completes KYB, uploads payment details, and attaches documents.</li>
-                    <li>Before confirmation, Ahmed sees the fee and transfers the equivalent amount in USDT.</li>
-                    <li>Payouts are sent to recipients' bank accounts and Ahmed receives confirmation.</li>
+                    <li data-i18n="case.0.how.0">The AI assistant guides him directly inside the AM interface.</li>
+                    <li data-i18n="case.0.how.1">The company completes KYB, uploads payment details, and attaches documents.</li>
+                    <li data-i18n="case.0.how.2">Before confirmation, Ahmed sees the fee and transfers the equivalent amount in USDT.</li>
+                    <li data-i18n="case.0.how.3">Payouts are sent to recipients' bank accounts and Ahmed receives confirmation.</li>
                   </ul>
                 </details>
                 <details class="case-details">
-                  <summary>Outcome</summary>
-                  <p>
+                  <summary data-i18n="case.outcomeSummary">Outcome</summary>
+                  <p data-i18n="case.0.outcome">
                     Recipients get fiat payouts to bank accounts. Ahmed keeps the payment status,
                     confirmation, and payment-execution documents.
                   </p>
@@ -223,29 +246,29 @@
                   <source srcset="assets/cases/musa.webp" type="image/webp" />
                   <img src="assets/cases/musa.jpg" loading="lazy" alt="Musa, trading company owner in Nigeria, checking shipment payment status" />
                 </picture>
-                <span class="case-flag">Nigeria · Trade and supply</span>
+                <span class="case-flag" data-i18n="case.1.flag">Nigeria · Trade and supply</span>
               </div>
               <div class="case-content">
-                <h3>Musa, Owner of a Trading Company</h3>
-                <p class="case-objective">
+                <h3 data-i18n="case.1.name">Musa, Owner of a Trading Company</h3>
+                <p class="case-objective" data-i18n="case.1.objective">
                   Pays for a shipment of goods through a structured international payment.
                 </p>
-                <p class="case-body">
+                <p class="case-body" data-i18n="case.1.body">
                   Musa needs to pay invoices on time, avoid delays from a prolonged banking chain,
                   and keep supplier trust with clear status and payment confirmation.
                 </p>
                 <details class="case-details">
-                  <summary>How the payment works</summary>
+                  <summary data-i18n="case.howSummary">How the payment works</summary>
                   <ul>
-                    <li>The AI assistant guides each step directly in the AM interface.</li>
-                    <li>The company completes KYB, uploads payment information, and attaches shipment documents.</li>
-                    <li>Before confirming, Musa sees the fee and transfers the equivalent amount in USDT.</li>
-                    <li>The supplier receives payout to a bank account, and Musa receives confirmation.</li>
+                    <li data-i18n="case.1.how.0">The AI assistant guides each step directly in the AM interface.</li>
+                    <li data-i18n="case.1.how.1">The company completes KYB, uploads payment information, and attaches shipment documents.</li>
+                    <li data-i18n="case.1.how.2">Before confirming, Musa sees the fee and transfers the equivalent amount in USDT.</li>
+                    <li data-i18n="case.1.how.3">The supplier receives payout to a bank account, and Musa receives confirmation.</li>
                   </ul>
                 </details>
                 <details class="case-details">
-                  <summary>Outcome</summary>
-                  <p>
+                  <summary data-i18n="case.outcomeSummary">Outcome</summary>
+                  <p data-i18n="case.1.outcome">
                     The supplier receives a standard bank-account payout while Musa keeps status,
                     confirmation, and payment-execution documents.
                   </p>
@@ -259,30 +282,30 @@
                   <source srcset="assets/cases/sunita.webp" type="image/webp" />
                   <img src="assets/cases/sunita.jpg" loading="lazy" alt="Sunita, mother in India, calmly checking education payment status from home" />
                 </picture>
-                <span class="case-flag">India · Education abroad</span>
+                <span class="case-flag" data-i18n="case.2.flag">India · Education abroad</span>
               </div>
               <div class="case-content">
-                <h3>Sunita, Mother of a Student</h3>
-                <p class="case-objective">
+                <h3 data-i18n="case.2.name">Sunita, Mother of a Student</h3>
+                <p class="case-objective" data-i18n="case.2.objective">
                   Pays for her child's education abroad through a clear and verifiable
                   international payment.
                 </p>
-                <p class="case-body">
+                <p class="case-body" data-i18n="case.2.body">
                   Sunita wants step-by-step guidance, transparent status updates, supporting
                   documents, and minimal banking bureaucracy.
                 </p>
                 <details class="case-details">
-                  <summary>How the payment works</summary>
+                  <summary data-i18n="case.howSummary">How the payment works</summary>
                   <ul>
-                    <li>The AI assistant guides her directly within the AM interface.</li>
-                    <li>Sunita completes KYC, uploads payment details, and attaches verification documents.</li>
-                    <li>Before confirmation, she sees the service fee and transfers the equivalent amount in USDT.</li>
-                    <li>The educational institution receives payout to its bank account.</li>
+                    <li data-i18n="case.2.how.0">The AI assistant guides her directly within the AM interface.</li>
+                    <li data-i18n="case.2.how.1">Sunita completes KYC, uploads payment details, and attaches verification documents.</li>
+                    <li data-i18n="case.2.how.2">Before confirmation, she sees the service fee and transfers the equivalent amount in USDT.</li>
+                    <li data-i18n="case.2.how.3">The educational institution receives payout to its bank account.</li>
                   </ul>
                 </details>
                 <details class="case-details">
-                  <summary>Outcome</summary>
-                  <p>
+                  <summary data-i18n="case.outcomeSummary">Outcome</summary>
+                  <p data-i18n="case.2.outcome">
                     Sunita receives payment status, confirmation, and documents confirming the
                     payment execution.
                   </p>
@@ -296,30 +319,30 @@
                   <source srcset="assets/cases/mehmet.webp" type="image/webp" />
                   <img src="assets/cases/mehmet.jpg" loading="lazy" alt="Mehmet, logistics operations director in Turkey, reviewing operational invoice details" />
                 </picture>
-                <span class="case-flag">Turkey · Logistics operations</span>
+                <span class="case-flag" data-i18n="case.3.flag">Turkey · Logistics operations</span>
               </div>
               <div class="case-content">
-                <h3>Mehmet, Operations Director of a Logistics Company</h3>
-                <p class="case-objective">
+                <h3 data-i18n="case.3.name">Mehmet, Operations Director of a Logistics Company</h3>
+                <p class="case-objective" data-i18n="case.3.objective">
                   Pays operational invoices for logistics and services through structured
                   international payment.
                 </p>
-                <p class="case-body">
+                <p class="case-body" data-i18n="case.3.body">
                   Mehmet manages expenses that keep the business running: logistics, support
                   services, and service invoices. He needs a clear route and transparent outcome.
                 </p>
                 <details class="case-details">
-                  <summary>How the payment works</summary>
+                  <summary data-i18n="case.howSummary">How the payment works</summary>
                   <ul>
-                    <li>The AI assistant guides him through each step in the AM interface.</li>
-                    <li>The company completes KYB, uploads payment information, and attaches documents.</li>
-                    <li>Before confirmation, Mehmet sees the service fee and transfers the equivalent amount in USDT.</li>
-                    <li>The payout is delivered to the recipient's bank account.</li>
+                    <li data-i18n="case.3.how.0">The AI assistant guides him through each step in the AM interface.</li>
+                    <li data-i18n="case.3.how.1">The company completes KYB, uploads payment information, and attaches documents.</li>
+                    <li data-i18n="case.3.how.2">Before confirmation, Mehmet sees the service fee and transfers the equivalent amount in USDT.</li>
+                    <li data-i18n="case.3.how.3">The payout is delivered to the recipient's bank account.</li>
                   </ul>
                 </details>
                 <details class="case-details">
-                  <summary>Outcome</summary>
-                  <p>
+                  <summary data-i18n="case.outcomeSummary">Outcome</summary>
+                  <p data-i18n="case.3.outcome">
                     Mehmet keeps payment confirmation, status visibility, and documents confirming
                     execution for the team.
                   </p>
@@ -333,30 +356,30 @@
                   <source srcset="assets/cases/michael.webp" type="image/webp" />
                   <img src="assets/cases/michael.jpg" loading="lazy" alt="Michael, Australian expat in Indonesia, checking official payment status" />
                 </picture>
-                <span class="case-flag">Indonesia · Expat payments</span>
+                <span class="case-flag" data-i18n="case.4.flag">Indonesia · Expat payments</span>
               </div>
               <div class="case-content">
-                <h3>Michael, an Australian Expat Living in Indonesia</h3>
-                <p class="case-objective">
+                <h3 data-i18n="case.4.name">Michael, an Australian Expat Living in Indonesia</h3>
+                <p class="case-objective" data-i18n="case.4.objective">
                   Pays official expenses such as medical bills and rent through clear international
                   payments.
                 </p>
-                <p class="case-body">
+                <p class="case-body" data-i18n="case.4.body">
                   Michael needs important day-to-day payments to move smoothly and on time, with
                   clear status visibility, minimal risk, and proper documentation.
                 </p>
                 <details class="case-details">
-                  <summary>How the payment works</summary>
+                  <summary data-i18n="case.howSummary">How the payment works</summary>
                   <ul>
-                    <li>The AI assistant guides him inside the AM interface.</li>
-                    <li>Michael completes KYC, uploads payment information, and attaches documents.</li>
-                    <li>Before confirmation, he sees the service fee and transfers the equivalent amount in USDT.</li>
-                    <li>The clinic or landlord receives payout to their bank account.</li>
+                    <li data-i18n="case.4.how.0">The AI assistant guides him inside the AM interface.</li>
+                    <li data-i18n="case.4.how.1">Michael completes KYC, uploads payment information, and attaches documents.</li>
+                    <li data-i18n="case.4.how.2">Before confirmation, he sees the service fee and transfers the equivalent amount in USDT.</li>
+                    <li data-i18n="case.4.how.3">The clinic or landlord receives payout to their bank account.</li>
                   </ul>
                 </details>
                 <details class="case-details">
-                  <summary>Outcome</summary>
-                  <p>
+                  <summary data-i18n="case.outcomeSummary">Outcome</summary>
+                  <p data-i18n="case.4.outcome">
                     Michael keeps the payment status, confirmation, and documents needed for his
                     records.
                   </p>
@@ -383,16 +406,16 @@
         </div>
 
         <div class="ai-confidence reveal">
-          <p class="eyebrow">Support built into the route</p>
-          <h3>AI guidance is there to reduce friction, not to take over the product story.</h3>
-          <p>
+          <p class="eyebrow" data-i18n="ai.eyebrow">Support built into the route</p>
+          <h3 data-i18n="ai.title">AI guidance is there to reduce friction, not to take over the product story.</h3>
+          <p data-i18n="ai.body">
             We intentionally built the AI assistant into the platform to simplify operations,
             guide users through each step, and provide answers throughout the payment process.
             After registration, users enter the interface immediately and start processing
             payments with full AI guidance.
           </p>
           <a class="button button-primary" href="#start">
-            Get Started
+            <span data-i18n="cta.getStarted">Get Started</span>
             <span class="button-arrow" aria-hidden="true">→</span>
           </a>
         </div>
@@ -401,40 +424,40 @@
       <!-- COMPARISON -->
       <section id="comparison" class="section compare">
         <div class="section-head reveal">
-          <p class="eyebrow">A simpler route</p>
-          <h2>Why the payment route through AM is simpler than SWIFT and bank transfers.</h2>
+          <p class="eyebrow" data-i18n="compare.eyebrow">A simpler route</p>
+          <h2 data-i18n="compare.title">Why the payment route through AM is simpler than SWIFT and bank transfers.</h2>
         </div>
 
         <div class="compare-grid reveal">
           <article class="compare-card compare-bad">
             <div class="compare-head">
               <span class="compare-icon">⏳</span>
-              <h3>Standard bank transfer</h3>
+              <h3 data-i18n="compare.bad.title">Standard bank transfer</h3>
             </div>
             <ul>
-              <li><span aria-hidden="true">✕</span> 3–7 business days</li>
-              <li><span aria-hidden="true">✕</span> Several correspondent banks</li>
-              <li><span aria-hidden="true">✕</span> Hidden fees along the route</li>
-              <li><span aria-hidden="true">✕</span> No clear payment status during the transfer</li>
+              <li><span aria-hidden="true">✕</span> <span data-i18n="compare.bad.items.0">3–7 business days</span></li>
+              <li><span aria-hidden="true">✕</span> <span data-i18n="compare.bad.items.1">Several correspondent banks</span></li>
+              <li><span aria-hidden="true">✕</span> <span data-i18n="compare.bad.items.2">Hidden fees along the route</span></li>
+              <li><span aria-hidden="true">✕</span> <span data-i18n="compare.bad.items.3">No clear payment status during the transfer</span></li>
             </ul>
           </article>
           <article class="compare-card compare-good">
             <div class="compare-head">
               <span class="compare-icon">⚡</span>
-              <h3>Payment route through AM</h3>
+              <h3 data-i18n="compare.good.title">Payment route through AM</h3>
             </div>
             <ul>
-              <li><span aria-hidden="true">✓</span> Most payments are completed within 1 business day</li>
-              <li><span aria-hidden="true">✓</span> Payout to the recipient's bank account</li>
-              <li><span aria-hidden="true">✓</span> The fee is visible before confirmation</li>
-              <li><span aria-hidden="true">✓</span> A clear payment path with confirmation documents</li>
+              <li><span aria-hidden="true">✓</span> <span data-i18n="compare.good.items.0">Most payments are completed within 1 business day</span></li>
+              <li><span aria-hidden="true">✓</span> <span data-i18n="compare.good.items.1">Payout to the recipient's bank account</span></li>
+              <li><span aria-hidden="true">✓</span> <span data-i18n="compare.good.items.2">The fee is visible before confirmation</span></li>
+              <li><span aria-hidden="true">✓</span> <span data-i18n="compare.good.items.3">A clear payment path with confirmation documents</span></li>
             </ul>
           </article>
         </div>
 
         <div class="center-action reveal">
           <a class="button button-primary" href="#start">
-            Start Now
+            <span data-i18n="cta.startNow">Start Now</span>
             <span class="button-arrow" aria-hidden="true">→</span>
           </a>
         </div>
@@ -443,30 +466,30 @@
       <!-- FAQ -->
       <section id="questions" class="section faq">
         <div class="section-head reveal">
-          <p class="eyebrow">Questions</p>
-          <h2>Answers before you start.</h2>
+          <p class="eyebrow" data-i18n="faq.eyebrow">Questions</p>
+          <h2 data-i18n="faq.title">Answers before you start.</h2>
         </div>
 
         <div class="faq-list reveal">
           <details open>
-            <summary>Is it really free?</summary>
-            <p>
+            <summary data-i18n="faq.0.q">Is it really free?</summary>
+            <p data-i18n="faq.0.a">
               Yes. Access to the platform and the ability to test the service with a personal AI
               assistant are completely free of charge. We provide access to a tool that solves a
               real problem for businesses.
             </p>
           </details>
           <details>
-            <summary>Does my supplier need to do anything differently?</summary>
-            <p>
+            <summary data-i18n="faq.1.q">Does my supplier need to do anything differently?</summary>
+            <p data-i18n="faq.1.a">
               No. Your supplier receives a standard local bank transfer in their own currency:
               USD, EUR, SGD, GBP, or another supported currency. They do not need a special wallet
               or any special setup.
             </p>
           </details>
           <details>
-            <summary>How do compliance checks work?</summary>
-            <p>
+            <summary data-i18n="faq.2.q">How do compliance checks work?</summary>
+            <p data-i18n="faq.2.a">
               AM is designed for lawful invoice-based payments and document-backed obligations.
               Availability depends on the corridor, verification, and review of the specific
               transaction. This does not constitute legal or financial advice; consult your
@@ -474,15 +497,15 @@
             </p>
           </details>
           <details>
-            <summary>How much can we realistically save?</summary>
-            <p>
+            <summary data-i18n="faq.3.q">How much can we realistically save?</summary>
+            <p data-i18n="faq.3.a">
               Most banks charge 3–6% for international transfers once fees and FX markups are
               included. The service fee is only a small fraction of that amount.
             </p>
           </details>
           <details>
-            <summary>How long does settlement take?</summary>
-            <p>
+            <summary data-i18n="faq.4.q">How long does settlement take?</summary>
+            <p data-i18n="faq.4.a">
               In most corridors, settlement is completed within 1 business day. SWIFT usually takes
               3–5 days, and those delays can impact supplier relationships and project timelines.
             </p>
@@ -493,10 +516,10 @@
       <!-- FINAL CTA -->
       <section id="start" class="final-cta">
         <div class="final-cta-inner reveal">
-          <p class="eyebrow eyebrow-light">Start with clarity</p>
-          <h2>Begin with a guided payment route, visible fees, and confirmation documents.</h2>
+          <p class="eyebrow eyebrow-light" data-i18n="final.eyebrow">Start with clarity</p>
+          <h2 data-i18n="final.title">Begin with a guided payment route, visible fees, and confirmation documents.</h2>
           <a class="button button-primary button-xl" href="mailto:hello@am.example?subject=AM%20access%20request">
-            Get Started
+            <span data-i18n="cta.getStarted">Get Started</span>
             <span class="button-arrow" aria-hidden="true">→</span>
           </a>
         </div>
@@ -509,15 +532,15 @@
           <span class="brand-mark" aria-hidden="true"></span>
           <strong>AM</strong>
         </div>
-        <p>AM · Invoice-based international payment support</p>
-        <p>Designed for clear routes, careful documentation, and calm financial operations.</p>
+        <p data-i18n="footer.line1">AM · Invoice-based international payment support</p>
+        <p data-i18n="footer.line2">Designed for clear routes, careful documentation, and calm financial operations.</p>
       </div>
     </footer>
 
     <!-- STICKY MOBILE CTA -->
     <div class="sticky-cta" data-sticky-cta aria-hidden="true">
       <a class="button button-primary button-block" href="#start">
-        Start for Free
+        <span data-i18n="cta.startFree">Start for Free</span>
         <span class="button-arrow" aria-hidden="true">→</span>
       </a>
     </div>
